@@ -59,6 +59,47 @@ to take care of it in order to process a single frame. What you will actually ne
 the example code does), is to repeatedly feed the retina with the same frame, as you would do
 with a still video.
 
+Here there is a small fragment of python code we used to process the image. It does 20
+iterations. This is an arbitrary number that we found experimentally to be (more than)
+enough
+
+@code{.py}
+#import OpenCV module
+import cv2
+
+#read the input image
+inputImage = cv2.imread('checkershadow_illusion4med.jpg', 1)
+#create our retina
+retina = cv2.bioinspired.createRetina((inputImage.shape[1], inputImage.shape[0]))
+
+#Uncomment the following line to load retina parameters from a xml file
+#retina.setup('MyRetinaParameters.xml')
+
+#feed the retina with several frames, in order to reach 'steady' state
+for i in range(20):
+    retina.run(inputImage)
+
+#get our processed image :)
+retinaOut_parvo = retina.getParvo()
+
+#show the original image
+cv2.imshow('image', inputImage)
+#show the processed image
+cv2.imshow('retina parvo out', retinaOut_parvo)
+
+#wait for a key to be pressed and exit
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+#write the image on a file
+cv2.imwrite('checkershadow_parvo.png', retinaOut_parvo)
+@endcode
+
+Despite which way you used to get your imaged processed, you should end up
+with something like this:
+
+![Parvo output for adelson checkerboard](images/checkershadow_parvo.png)
+
 Analyzing the results
 ----------------------
 
