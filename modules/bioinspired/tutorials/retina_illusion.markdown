@@ -12,7 +12,7 @@ The Adelson checkerboard
 
 Looking at the checkerboard image below, human eyes perceive the "B" square lighter than the
 "A" square.
-While a checkerboard would originally have a Luger "B" square, actually in this image the
+While a real checkerboard would originally have a lighter "B" square, actually in this image the
 shadow of the green cylinder casting over the "B" square ends up in making the "A" and "B"
 squares actually having the same luminance.
 
