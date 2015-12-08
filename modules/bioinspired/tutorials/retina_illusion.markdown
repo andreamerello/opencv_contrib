@@ -30,27 +30,41 @@ values of the two squares with the picker tool.
 Reproducing the illusion
 ------------------------
 
-The bioinspired module does mimic the parvocellular retina process, and it does reproduce
+The bioinspired module does mimic (also) the parvocellular retina process, and it does reproduce
 our local contrast adaption.
 
-We can expect the parvo channel output to contains luminance values similar to those we
-perceive with our eyes. In this case we expect the "B" square pixels to be really lighter
-than the "A" square pixels.
+NOTE: the checkerboard image, as you may see on your laptop, projects on your retina with
+dimensions that causes the local contrast adaption to take into account both the two squares
+at the same time.
 
-In order to make things working, there is one important thing to the care of: the checkerboard
-image, as you may see on your laptop, projects on your retina with dimensions that causes
-the local contrast adaption to take into account both the two squares at the same time.
-We need opencv to do the same.
+We need opencv to do the same. This means we have to ensure that the opencv's notion of
+"local" does match with our image's dimensions, otherwise the local contrast adaption
+wouldn't work as expected.
 
-This means we have to ensure that the opencv's notion of "local" does match with our image's
-dimensions, otherwise the local contrast adaption wouldn't work as expected.
-
-For this reason we have to adjust the hcellsSpatialConstant parameter (that technically
+For this reason we may have to adjust the hcellsSpatialConstant parameter (that technically
 specifies the low spatial cut frequency, or slow luminance changes sensitivity) depending by
-the image resolution.
+the image resolution. For the image in this tutorial, the default parameters should be fine.
 
+In order to feed the image to the bioinspired module, we can use either your own code or
+the example_bioinspired_retinaDemo example that comes with the bioinspired module.
 
-example_bioinspired_retinaDemo -image checkershadow_illusion4med.jpg
+Running example_bioinspired_retinaDemo -image checkershadow_illusion4med.jpg will cause
+our image to be processed in both parvocellular and magnocellular channels (we are interested
+just in the first one).
+
+If you choose to use your own code, please note that the parvocellular (and magnocellular)
+channel does require some iterations (frames to be processed) before actually get steady.
+This is something that you don't need to worry about when you process videos, but you have
+to take care of it in order to process a single frame. What you will actually need (and that
+the example code does), is to repeatedly feed the retina with the same frame, as you would do
+with a still video.
+
+Analyzing the results
+----------------------
+
+We can expect the parvo channel output to contains luminance values similar to
+those we perceive with our eyes. In this case we expect the "B" square pixels to be really lighter
+than the "A" square pixels.
 
 .. And in fact that is!
 
