@@ -164,3 +164,15 @@ them side-by-side, as I did for the original Adelson image.
 
 It should be quite evident that the "B" square is really ligher than the "A" square! Congratulations: you have
 just reproduced the Adelson illusion with the Bioinspired module!
+
+Credits
+-------
+
+I want to thank:
+
+**Alexandre Benoit** - for being so kind of explaining me how this whole thing works, for giving me the
+opportunity of writing this tutorial, and for reviewing it.
+
+**Edward Adelson** - for allowing me to freely use his checkerboard image.
+
+**Antonio Cuni**  - for reviewing this tutorial and for writing the Python code.
