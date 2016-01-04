@@ -1,4 +1,4 @@
-Processing images causing optical illusions {#tutorial_bioinspired_retina_illusions}
+Processing images causing optical illusions {#tutorial_bioinspired_retina_illusion}
 =============================================================
 
 Goal

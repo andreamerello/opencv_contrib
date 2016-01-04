@@ -7,7 +7,7 @@ Discovering the human retina and its use for image processing {#tutorial_table_o
 
     Processing regular images
 
--   @subpage tutorial_bioinspired_retina_illusions
+-   @subpage tutorial_bioinspired_retina_illusion
 
     *Author:* Andrea Merello
 
