@@ -76,6 +76,21 @@ just in the first one).
 
 If you choose to use your own code, please note that the parvocellular (and magnocellular)
 channel does require some iterations (frames to be processed) before actually getting steady.
+
+Actually parvo (and magno) channel do cares about temporal information, that is,
+when you start feeding frames, it is similar to you with closed eyes; then you open them and
+you see the chessboard.
+
+This is a static image but your retina just starts moving to a new context (eyes opening) and
+has to adapt.
+
+While in this transient state the luminance information do matters, and you see more or less
+the absolute luminance values.
+
+But when steady state is reached, you receive more contextual luminance information. Your eyes work
+in a center-surround manner and take into account the neighborhood luminance to evaluate the
+region of interest luminance level.
+
 This is something that you don't need to worry about when you process videos, but you have
 to take care of it in order to process a single frame. What you will actually need (and that
 the example code does), is to repeatedly feed the retina with the same frame, as you would do
