@@ -11,8 +11,8 @@ The Adelson checkerboard
 ------------------------
 
 Looking at the checkerboard image below, human eyes perceive the "B" square lighter than the
-"A" square.
-While a real checkerboard would originally have a lighter "B" square, in this image the
+"A" square, although they are pictured in the very same RGB color.
+Of course in the physical world, checkerboard has a "B" square which is lighter than "A": but in this image the
 shadow of the green cylinder casting over the "B" square ends up in making the "A" and "B"
 squares actually having the same luminance.
 
@@ -38,7 +38,7 @@ into account both the two squares at the same time.
 
 
 That is to say, when you look at one cell, the neighbors are also in your foveal field of
-view and local adaptation take them into account !
+view and local adaptation take them into account!
 
 The foveal vision area is something like one inch at one meter (and because your eye moves
 continuously, with the so called "saccades", your brain is able to reconstruct the entire
@@ -56,7 +56,7 @@ vision, and it does reproduce our eyes' local adaption.
 
 This means we can expect the parvo channel output to really contain luminance values
 similar to those we perceive with our eyes. Specifically, in this case we expect the "B" square
-pixels to be really lighter than the "A" square pixels.
+RGB values to be actually lighter than the "A" ones.
 
 To correctly mimic what our eye does we need opencv to do the local adaption on the right
 image portion. This means we have to ensure that the opencv's notion of "local" does match with our
