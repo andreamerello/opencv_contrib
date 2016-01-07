@@ -107,34 +107,31 @@ iterations. This is an arbitrary number that we found experimentally to be (more
 enough
 
 @code{.py}
-#import OpenCV module
 import cv2
 
-#read the input image
 inputImage = cv2.imread('checkershadow_illusion4med.jpg', 1)
-#create our retina
 retina = cv2.bioinspired.createRetina((inputImage.shape[1], inputImage.shape[0]))
 
-#Uncomment the following line to load retina parameters from a xml file
+# the retina object is created with default parameters. If you want to read
+# the parameters from an external XML file, uncomment the next line
 #retina.setup('MyRetinaParameters.xml')
 
-#feed the retina with several frames, in order to reach 'steady' state
+# feed the retina with several frames, in order to reach 'steady' state
 for i in range(20):
     retina.run(inputImage)
 
-#get our processed image :)
+# get our processed image :)
 retinaOut_parvo = retina.getParvo()
 
-#show the original image
+# show both the original image and the processed one
 cv2.imshow('image', inputImage)
-#show the processed image
 cv2.imshow('retina parvo out', retinaOut_parvo)
 
-#wait for a key to be pressed and exit
+# wait for a key to be pressed and exit
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-#write the image on a file
+# write the output image on a file
 cv2.imwrite('checkershadow_parvo.png', retinaOut_parvo)
 @endcode
 
