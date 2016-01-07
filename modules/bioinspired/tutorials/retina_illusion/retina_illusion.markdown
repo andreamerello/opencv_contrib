@@ -135,7 +135,7 @@ cv2.destroyAllWindows()
 cv2.imwrite('checkershadow_parvo.png', retinaOut_parvo)
 @endcode
 
-Despite which way you used to get your imaged processed, you should end up
+Whatever method you used to process the image, you should end up
 with something like this:
 
 ![Parvo output for adelson checkerboard](images/checkershadow_parvo.png)
@@ -143,14 +143,16 @@ with something like this:
 Analyzing the results
 ----------------------
 
-We expected the parvo channel output to contain pixels in the "B" square that are lighter
-than pixels in the "A" square.
+We expected that the "B" pixels in the parvo channel output are lighter than "A" ones.
 
 .. And in fact that is!
 
-While looking at the resulting image may not tell us so much (indeed we are seeing the illusion
-even in the first image due to our real eyes, and here we are just applying the parvocellular process
-two times, one in our PC, one in our eyes), we can convince ourselves that the illusion appeared
+Looking at the resulting image might not tell us so much at a first glance: the "B" square looks 
+lighter than "A" to our eyes, as it did in the input image. The difference is that, contrarily to
+the input image, now the RGB values of the pixels are actually lighter; note that when looking at
+the output image, we are actually  applying the parvocellular process
+two times: first in the bioinspired module, then in our eyes).
+We can convince ourselves that the illusion appeared
 in the computed image by measuring the squares' luminance with the image manipulation program
 and the picker tool, or by cropping pieces of the squares and putting them side-by-side.
 
