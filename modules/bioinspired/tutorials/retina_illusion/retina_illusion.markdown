@@ -44,8 +44,6 @@ The foveal vision area is something like one inch at one meter (and because your
 continuously, with the so called "saccades", your brain is able to reconstruct the entire
 color scene in real time).
 
-** ask to alexandre: I realized that this seems not perfectly fitting: foveal vision is 1 inch @ 1 mt. On my laptop that is closer than 1 mt, the two sqares are @ maybe 2-3 inches distance **
-
 When looking at one area, your eye locally adapts to luminance, filters noise, enforces contours,
 etc. and this make the illusion work inside this area.
 

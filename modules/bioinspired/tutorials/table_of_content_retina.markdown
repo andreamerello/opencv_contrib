@@ -3,7 +3,7 @@ Discovering the human retina and its use for image processing {#tutorial_table_o
 
 -   @subpage tutorial_bioinspired_retina_model
 
-    *Author:* FILL-ME
+    *Author:* Alexandre Benoit
 
     Processing regular images
 
