@@ -147,11 +147,11 @@ We expected that the "B" pixels in the parvo channel output are lighter than "A"
 
 .. And in fact that is!
 
-Looking at the resulting image might not tell us so much at a first glance: the "B" square looks 
+Looking at the resulting image might not tell us so much at a first glance: the "B" square looks
 lighter than "A" to our eyes, as it did in the input image. The difference is that, contrarily to
 the input image, now the RGB values of the pixels are actually lighter; note that when looking at
 the output image, we are actually  applying the parvocellular process
-two times: first in the bioinspired module, then in our eyes).
+two times: first in the bioinspired module, then in our eyes.
 We can convince ourselves that the illusion appeared
 in the computed image by measuring the squares' luminance with the image manipulation program
 and the picker tool, or by cropping pieces of the squares and putting them side-by-side.
