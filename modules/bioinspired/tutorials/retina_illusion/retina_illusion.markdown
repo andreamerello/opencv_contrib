@@ -36,7 +36,6 @@ It's worth to know that this illusion works because the checkerboard image, as y
 on your laptop, casts on your retina with dimensions that cause the retina local adaption to take
 into account both the two squares at the same time.
 
-
 That is to say, when you look at one cell, the neighbors are also in your foveal field of
 view and local adaptation take them into account!
 
@@ -97,8 +96,13 @@ region of interest luminance level. And that's when our illusion comes out !
 This is something that you don't need to worry about when you process videos, because you are
 naturally feeding the virtual retina with several frames, but you have to take care of it in
 order to process a single frame.
-What you will actually need (and that the example code does), is to repeatedly feed the retina
-with the same frame, as you would do with a still video.
+
+What you will actually need to do when processing a single frame, and you only need steady state response,
+is to repeatedly feed the retina with the same frame (this is what the example code does), as you
+would do with a still video. Alternatively you can set retina temporal parameters to 0 to get steady state immediately
+(**photoreceptorsTemporalConstant** and **hcellsTemporalConstant** parameters of the xml file); however
+in this case you should be aware that you are now making experiments with something that is
+deliberately less accurate in reproducing the behaviour of a real retina!
 
 Here there is a small fragment of python code we used to process the image. It does 20
 iterations. This is an arbitrary number that we found experimentally to be (more than)
