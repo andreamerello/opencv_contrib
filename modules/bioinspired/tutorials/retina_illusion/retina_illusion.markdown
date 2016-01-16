@@ -36,15 +36,21 @@ It's worth to know that this illusion works because the checkerboard image, as y
 on your laptop, casts on your retina with dimensions that cause the retina local adaption to take
 into account both the two squares at the same time.
 
-That is to say, when you look at one cell, the neighbors are also in your foveal field of
-view and local adaptation take them into account!
-
 The foveal vision area is something like one inch at one meter (and because your eye moves
 continuously, with the so called "saccades", your brain is able to reconstruct the entire
-color scene in real time).
+color scene in real time). This means that one single letter, either A or B, can hit
+your fovea at any time.
 
-When looking at one area, your eye locally adapts to luminance, filters noise, enforces contours,
-etc. and this make the illusion work inside this area.
+The point is that, even if you can't see both letters at the same time in a single eye fixation,
+when looking at one letter your fovea also takes into account light information from what is around it.
+This means that the fovea actually perceives also the neighboring cells.
+
+The net effect is that when looking at one area, your eye locally adapts to luminance, filters noise,
+enforces contours, etc. considering what *surrounds* this area, and this makes the illusion work. We
+say that *the retina works in a "center surround" manner*.
+
+So, the "A" cell being surrounded by lighter cells can be perceived darker. As a comparison, cell "B" 's
+neighborhood is darker and the cell "B" is then perceived lighter.
 
 Reproducing the illusion
 ------------------------
