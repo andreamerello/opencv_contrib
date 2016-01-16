@@ -24,7 +24,7 @@ foveal area.
 
 You may find the original Adelson's explanation [here](http://web.mit.edu/persci/people/adelson/checkershadow_description.html).
 
-Proof: You can convince yourself by using a image manipulation program, cutting out a portion
+Proof: You can convince yourself by using an image manipulation program, cutting out a portion
 of the two squares, and looking at them without any background. You can also measure the RGB
 values of the two squares with the picker tool.
 
@@ -95,7 +95,7 @@ in a center-surround manner and take into account the neighborhood luminance to 
 region of interest luminance level. And that's when our illusion comes out !
 
 This is something that you don't need to worry about when you process videos, because you are
-natuarally feeding the virtual retina with several frames, but you have to take care of it in
+naturally feeding the virtual retina with several frames, but you have to take care of it in
 order to process a single frame.
 What you will actually need (and that the example code does), is to repeatedly feed the retina
 with the same frame, as you would do with a still video.
