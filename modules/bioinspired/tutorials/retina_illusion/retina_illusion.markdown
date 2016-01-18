@@ -33,7 +33,7 @@ It should be quite evident they have the same luminance.
 ![Adelson checkerboard proof](images/checkershadow_illusion4med_proof.jpg)
 
 It's worth to know that this illusion works because the checkerboard image, as you may see it
-on your laptop, casts on your retina with dimensions that cause the retina local adaption to take
+on your laptop, casts on your retina with dimensions that cause the retina local adaptation to take
 into account both the two squares at the same time.
 
 The foveal vision area is something like one inch at one meter (and because your eye moves
@@ -55,15 +55,15 @@ neighborhood is darker and the cell "B" is then perceived lighter.
 Reproducing the illusion
 ------------------------
 The bioinspired module does mimic (also) the parvocellular retina process, that is our foveal
-vision, and it does reproduce our eyes' local adaption.
+vision, and it does reproduce our eyes' local adaptation.
 
 This means we can expect the parvo channel output to really contain luminance values
 similar to those we perceive with our eyes. Specifically, in this case we expect the "B" square
 RGB values to be actually lighter than the "A" ones.
 
-To correctly mimic what our eye does we need opencv to do the local adaption on the right
+To correctly mimic what our eye does we need opencv to do the local adaptation on the right
 image portion. This means we have to ensure that the opencv's notion of "local" does match with our
-image's dimensions, otherwise the local adaption wouldn't work as expected.
+image's dimensions, otherwise the local adaptation wouldn't work as expected.
 
 For this reason we may have to adjust the **hcellsSpatialConstant** parameter (that technically
 specifies the low spatial cut frequency, or slow luminance changes sensitivity) depending by
