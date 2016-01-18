@@ -169,7 +169,7 @@ them side-by-side, as I did for the original Adelson image.
 
 ![Illusion reproduced](images/checkershadow_parvo_proof.png)
 
-It should be quite evident that the "B" square is really ligher than the "A" square! Congratulations: you have
+It should be quite evident that the "B" square is really lighter than the "A" square! Congratulations: you have
 just reproduced the Adelson illusion with the Bioinspired module!
 
 Credits
