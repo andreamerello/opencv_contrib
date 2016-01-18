@@ -12,7 +12,7 @@ The Adelson checkerboard
 
 Looking at the checkerboard image below, human eyes perceive the "B" square lighter than the
 "A" square, although they are pictured in the very same RGB color.
-Of course in the physical world, checkerboard has a "B" square which is lighter than "A": but in this image the
+Of course in the physical world, checkerboard has a "B" square which is lighter than "A", but in this image the
 shadow of the green cylinder casting over the "B" square ends up in making the "A" and "B"
 squares actually having the same luminance.
 
