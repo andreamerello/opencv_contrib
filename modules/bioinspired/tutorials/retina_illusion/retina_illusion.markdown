@@ -52,6 +52,8 @@ say that *the retina works in a "center surround" manner*.
 So, the "A" cell being surrounded by lighter cells can be perceived darker. As a comparison, cell "B" 's
 neighborhood is darker and the cell "B" is then perceived lighter.
 
+Finally, since shadow edges are soft, retina eliminates this information. Then shadows do not disrupt the overall chessboard observation making possible to "confidently being fooled" by the perceived cells luminance.
+
 Reproducing the illusion
 ------------------------
 The bioinspired module does mimic (also) the parvocellular retina process, that is our foveal
